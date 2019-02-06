@@ -35,6 +35,14 @@
   margin: 0;
   font-size: 48px;
 }
+@keyframes menuOpen {
+  0% {
+    left: -350px;
+  }
+  100% {
+    left: 0px;
+  }
+}
 .menu-button {
   position: absolute;
   left: 20px;
@@ -63,6 +71,8 @@
 }
 .menu--open {
   display: block;
+  animation-name: menuOpen;
+  animation-duration: 0.5s;
 }
 .articles {
   margin-top: 95px;

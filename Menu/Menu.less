@@ -1,3 +1,14 @@
+@keyframes menuOpen {
+	0% {left: -350px;}
+	100% {left: 0px;}
+}
+
+@keyframes menuClose {
+	0% {left: 0px;}
+	100% {left: -350px;}
+}
+
+
 .menu-button {
   position: absolute;
   left: 20px;
@@ -27,4 +38,11 @@
 
 .menu--open {
   display: block;
+  animation-name: menuOpen;
+  animation-duration: .5s;
+}
+
+.menu--close {
+  animation-name: menuClose;
+  animation-duration: 5s;
 }
